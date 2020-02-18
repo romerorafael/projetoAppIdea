@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 10vh;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  line-height: 10vh;
+}
+
+#corpo {
+  height: 200px;
+  width: 250px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#corpo input, #corpo label, #corpo button {
+  display: inline-block;
+  margin: 5px;
+}
