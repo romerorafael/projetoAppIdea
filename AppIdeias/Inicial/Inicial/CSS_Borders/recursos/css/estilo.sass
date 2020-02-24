@@ -1,0 +1,67 @@
+body
+    background-color: lighten(#000022, 10)
+    
+#cabecalho
+    margin: 10px auto
+    text-align: center
+    color: #dddddd
+    h1
+        display: inline-block
+        border-bottom: 3px solid #dddddd
+
+#principal
+    display: flex
+    .caixa
+        margin: 30px auto
+        height: 300px
+        width: 300px
+        background: rgb(9,36,0)
+        background: linear-gradient(45deg, rgba(9,36,0,1) 0%, rgba(9,121,24,1) 50%, rgba(5,255,0,1) 100%)
+        input
+            text-align: center
+            position: relative
+            width: 25px
+        #canto1
+            top: -15px
+            left: -55px
+        #canto2
+            top: -15px
+            right: -265px
+        #canto3
+            bottom: -285px
+            left: -150px
+        #canto4
+            bottom: -280px
+            right: -175px
+    .caracCaixa
+        background-color: #ffffff
+        border-radius: 20px
+        margin-right: 100px
+        width: 400px
+        height: 200px
+        padding-top: 100px
+
+#resposta
+    display: flex
+    justify-content: center
+    button
+        texte-align: center
+    .infos-copiar
+        text-align: center
+        background-color: #ffffff
+        line-height: 30px
+        border: none
+        width: 400px
+        padding: 0 10px
+        user-select: none;
+    .copia
+        text-align: center
+        line-height: 30px
+        font-size: 20px
+        color: #ffffff
+        width: 30px
+        height: 30px
+        background-color: #333333
+        border-radius: 0px 5px 5px 0px
+        &:hover
+            background-color: darken(#333333,5)
