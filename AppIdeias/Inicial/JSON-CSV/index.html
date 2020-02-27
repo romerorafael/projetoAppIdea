@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Scripts e Links utilizados-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="recursos/js/script.js"></script>
+    <link rel="stylesheet" href="recursos/css/estilo.css">
+    <script src="https://kit.fontawesome.com/4e43edeefd.js" crossorigin="anonymous"></script>
+<!--Fim Scripts e Links-->
+
+    <title>JSON e CSV converter</title>
+</head>
+<body>
+    
+    <section id="principal">
+        <textarea name="original" id="original">Id,Nome
+            1,Rafael
+            2,Fernando
+        </textarea>
+        <div id="convertores">
+            <button class="csv">
+                CSV
+                <i class="fas fa-chevron-circle-right"></i>
+            </button>
+            <button class="json">
+                JSON
+                <i class="fas fa-chevron-circle-right"></i>
+            </button>
+        </div>
+        <textarea name="final" id="final"> </textarea>
+    </section>
+
+</body>
+</html>
