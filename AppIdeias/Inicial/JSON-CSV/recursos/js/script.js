@@ -1,21 +1,49 @@
 $(document).ready(function(){
+    var nomeTexto
+    
     $('.json').click(()=>{
         if(verificaCSV()){
             CSV2JSON()
+            nomeTexto='MeuJSON'
         }
     })
 
     $('.csv').click(function(){
         if(verificaJSON()){
             JSOn2CSV()
+            nomeTexto='MeuCSV'
         }
     })
+
+    $("#copiar").click((e)=>{
+        var texto=$('#final').val()
+        if(texto==0){
+            alert('Caixa vazia')
+            return false
+        }else{
+            $('#final').select();
+            document.execCommand("copy");
+            alert('Texto copiado')
+        }
+    })
+
+    $('#baixar').click((e)=>{
+        var texto = $('#final').val()
+        if(texto==0){
+            alert('Caixa vazia')
+            return false
+        }else{
+            var blob = new Blob([texto], {type: "text/plain;charset=utf-8"});
+            saveAs(blob, nomeTexto+".txt");
+        }
+    })
+
 })
 
 /*Verificar possíveis erros antes de executar o transformador*/
 function verificaCSV(){
     var texto=$('#original').val()
-    if(texto.length==0){
+    if(texto==0){
         alert('CSV vazio')
         return false
     }else if(!isAlpha(texto[0])){
@@ -29,7 +57,7 @@ function verificaCSV(){
 }
 function verificaJSON(){
     var texto=$('#original').val()
-    if(texto.length==0){
+    if(texto==0){
         alert('JSON vazio')
         return false
     }else if(texto[0]!= '['){

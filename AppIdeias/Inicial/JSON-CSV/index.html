@@ -6,6 +6,7 @@
 
 <!--Scripts e Links utilizados-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="recursos/js/FileSaver.min.js"></script>
     <script src="recursos/js/script.js"></script>
     <link rel="stylesheet" href="recursos/css/estilo.css">
     <script src="https://kit.fontawesome.com/4e43edeefd.js" crossorigin="anonymous"></script>
@@ -16,9 +17,7 @@
 <body>
     
     <section id="principal">
-        <textarea name="original" id="original">Id,Nome
-            1,Rafael
-            2,Fernando
+        <textarea name="original" id="original">
         </textarea>
         <div id="convertores">
             <button class="csv">
@@ -31,6 +30,11 @@
             </button>
         </div>
         <textarea name="final" id="final"> </textarea>
+    </section>
+
+    <section id="ferramentas">
+        <button id="copiar">Copiar texto</button>
+        <button id="baixar">Download</button>
     </section>
 
 </body>

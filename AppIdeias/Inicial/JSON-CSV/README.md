@@ -22,4 +22,4 @@ App simples que terá o intuito de converter arquivos arquivos CSV em arquivos J
 - [ ] Usuário pode colar um caminho de CSV/JSON de arquivo no sistema local na caixa de texto.
 - [ ] Usuário pode usar um botão Carregar arquivo para a caixa de texto.
 - [ ] Mensagem de erro caso o arquivo não seja encontrado.
-- [ ] Salva o arquivo convertido para posterior uso.
+- [x] Salva o arquivo convertido para posterior uso.
